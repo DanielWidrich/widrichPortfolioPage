@@ -1,0 +1,297 @@
+/*classes for experimenting with links and positioning */
+.pblocktext {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.alignR {
+  text-align: right;
+}
+
+/* semi-simple gradient color backgrounds*/
+.white2black {
+background-image: linear-gradient(to right, #ffffff, #e5e5e5, #cccccc, #b2b2b2, #999999, #7f7f7f, #666666, #4c4c4c, #333333, #191919, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+}
+
+.black2white {
+  background-image: linear-gradient(to left, #ffffff, #e5e5e5, #cccccc, #b2b2b2, #999999, #7f7f7f, #666666, #4c4c4c, #333333, #191919, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+}
+
+.danMountain {
+  background-image: url("https://c3.staticflickr.com/8/7563/27365288642_5d0f4be051_b.jpg");
+  background-repeat: no-repeat;        
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-position: center center; 
+  background-size: cover;
+  opacity: 1;
+}
+
+/* flickr image of B&W trees looking up into canopy */
+.treeCanopy {
+  background-image: url("https://c6.staticflickr.com/6/5514/11753006925_22aa0e5dbf_z.jpg");
+  background-repeat: no-repeat;        
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-position: center center; 
+  background-size: cover;
+  opacity: .5;
+}
+
+.testBackground3 {
+  background-image: radial-gradient(rgba(0,0,0,1), rgba(0,0,255,.5));
+  opacity: .7; 
+}
+
+.roundedImage {
+  border-radius: 50%;
+  width: 85%;
+  opacity: 1;
+  background-position: center;
+}
+
+.radialGradient {
+  background: radial-gradient(black, grey);
+}
+
+.blackBackground {
+  background-color: #000000;
+}
+
+.whiteBackground {
+  background-color: #ffffff;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.orbitron {
+  font-family: orbitron;
+}
+
+.league {
+  font-family: league;
+}
+
+/* this element is used to exclude styles on small screens which, for whatever reason, are not compatible with functional capabilities */
+@media screen and (min-width: 1025px) {
+  .LRGwhite2black {
+    background-image: linear-gradient(to right, #ffffff, #e5e5e5, #cccccc, #b2b2b2, #999999, #7f7f7f, #666666, #4c4c4c, #333333, #191919, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+  }
+  
+  .LRGPowerOn {
+  background-image: url("http://c3.staticflickr.com/8/7344/27309955754_7a530320f8_m.jpg");
+  background-repeat: no-repeat;        
+  background-position: center center; 
+  background-size: 25%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  opacity: 1;
+}
+
+  .LRGgradientText {
+    font-size: 4em;
+    background: -webkit-linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab), transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3;
+    background: -o-linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab);
+    background: -moz-linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab);
+    background: linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab);
+  }
+  
+  .LRGgradientText2 {
+    font-size: 2em;
+    background: -webkit-linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab), transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3;
+    background: -o-linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab);
+    background: -moz-linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab);
+    background: linear-gradient(left, #7b90ab, #7b90ab, #d56d28, #7b90ab, #7b90ab);
+  }
+  
+  .LRGgradientText3 {
+    font-size: 2em;
+    background: -webkit-linear-gradient(left, #d56d28, #d56d28, #7b90ab, #d56d28, #d56d28), transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3;
+    background: -o-linear-gradient(left, #d56d28, #d56d28, #7b90ab, #d56d28, #d56d28);
+    background: -moz-linear-gradient(left, #d56d28, #d56d28, #7b90ab, #d56d28, #d56d28);
+    background: linear-gradient(left, #d56d28, #d56d28, #7b90ab, #d56d28, #d56d28);
+  }
+  
+  .LRGpText {
+    color: #7b90ab;
+  }
+  
+  .LRGheadingTextOrange {
+    color: #d56d28;
+    font-size: 4em;
+  }
+  
+  .LRGphotoDisappear {
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+  }
+  
+  .LRGorange {
+    color: #d56d28;
+  }
+  
+  .LRGred {
+    color: #ff0000;
+  }
+  
+  .LRGblue {
+    color: #7b90ab;
+  }
+  
+  .LRGblue3em {
+    color: #7b90ab;
+    font-size: 3em;
+  }
+  
+  .LRGblack {
+    color: black;
+  }
+  
+  .LRGheight250 {
+    height: 250px;
+  }
+  
+  /* border style for experimenting and for practical implication */
+    .thin-red-border {
+    border-color: #d56d28;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
+  .thin-blue-border {
+    border-color: #7b90ab;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  .LRGportfolioImage {
+    position: relative;
+    height: 300px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  
+ 
+  
+}
+
+/* This defines properties exclusive for small screens  */
+@media screen and (max-width: 1024px) {
+.XSportfolioImage {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ } 
+  
+  .MobilePowerOn {
+  background-image: url("http://c3.staticflickr.com/8/7344/27309955754_7a530320f8_m.jpg");
+  background-repeat: no-repeat;        
+  background-position: center center; 
+  background-size: 25%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  opacity: 1;
+}
+
+  .mobileTextWhite {
+  color: #ffffff;
+  font-family: orbitron;
+  }
+  
+  .mobileTextOrange {
+    color: #d56d28;
+    font-family: orbitron;
+  }
+  
+  .mobileTextBlue {
+    color: #7b90ab;
+    
+  }
+  
+  .mobileTextCenter {
+    text-align: center;
+  }
+  
+  .mobilewhite2black {
+  background-image: linear-gradient(to right, #ffffff, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000,   #000000);
+  }
+  
+  .mobileMarginTop15 {
+    margin-top: 15%;
+  }
+  
+  .mobileMarginTop10 {
+    margin-top: 10%;
+  }
+  
+  .mobileMarginTop5 {
+    margin-top: 5%;
+  }
+  .mobileBlkBack {
+  background-color: #000000;
+  }
+  
+  .mobileGreyBack {
+    background-color: #cccccc;
+  }
+  
+  .mobilePhotoDisappear {
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+  }
+  
+   .mobilethin-white-border {
+    border-color: #ffffff;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
+  .mobilethin-orange-border {
+    border-color: #d56d28;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
+  .mobilethin-blue-border {
+    border-color: #7b90ab;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
+  
+}
